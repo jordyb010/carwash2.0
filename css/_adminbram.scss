@@ -1,0 +1,113 @@
+.adminbram {
+    max-width: 126rem;
+    margin: 5rem auto;
+
+    &__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        
+        button {
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            background-color: #3b42bf;
+            color: white;
+            font-weight: 600;
+            border: none; 
+        }
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        background-color: #f1f1f1;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        
+
+        &__image {
+
+            img {
+                width: 10rem;
+            }
+        }
+
+        &__brand {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-weight: 600;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__name {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-weight: 600;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__price {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-weight: 600;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        &__edit {
+            display: flex;
+            align-items: center;
+            
+            button {
+                font-size: 2rem;
+                padding: 1rem 2rem;
+                border-radius: 1rem;
+                background-color: #3b42bf;
+                color: white;
+                font-weight: 600;
+                border: none;
+            }
+        }
+
+        &__delete {
+            display: flex;
+            align-items: center;
+            
+            button {
+                font-size: 2rem;
+                padding: 1rem 2rem;
+                border-radius: 1rem;
+                background-color: #3b42bf;
+                color: white;
+                font-weight: 600;
+                border: none;
+            }
+        }
+    }
+}
+
+    

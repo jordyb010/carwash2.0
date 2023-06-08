@@ -1,0 +1,35 @@
+@import '_product.scss';
+@import '_navbar.scss';
+@import '_variable.scss';
+@import '_banner.scss';
+@import '_carousel.scss';
+@import '_homecards.scss';
+@import '_ads.scss';
+@import '_categories.scss';
+@import '_scrollbar.scss';
+@import '_productbram.scss';
+@import '_shoppingcart.scss';
+@import '_adminbram.scss';
+@import '_adminchoose.scss';
+@import "_about";
+@import "_variable";
+@import "_footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+@import "_contactpage";
+@import "_variable";
+@import "_admin";

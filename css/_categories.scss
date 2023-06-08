@@ -1,0 +1,264 @@
+.category-select {
+    max-width: 126rem;
+    margin: 5rem auto;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+
+        &__item {
+            background: #F3F6FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            border-radius: 2rem;
+            box-shadow: 1px 1px 1px 0px rgba(222, 222, 222, 0.75);
+            cursor: pointer;
+            transition: all ease-in-out 0.1s;
+            margin: 0 auto;
+            border: none;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                background: linear-gradient(90deg, #3b42bf 0%, #1c228c 100%);
+                box-shadow: 1px 1px 1px 0px #181b52;
+                transform: scale(1.05);
+
+                i {
+                    color: white;
+                }
+            }
+
+            &:active {
+                background: linear-gradient(90deg, #2a2f8b 0%, #0f124a 100%);
+            }
+
+            i {
+                font-size: 4.25rem;
+                height: 4.25rem;
+                width: 4.25rem;
+                display: flex;
+                align-items: center;
+                margin: 2.25rem;
+            }
+
+            &:focus {
+                background-color: #3b42bf;
+                color: white;
+            }
+        }
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 2px solid #f4f1ff;
+        margin: 1.5rem 0 2rem 0;
+    }   
+}
+
+.category-title {
+    text-align: center;
+    max-width: 126rem;
+    margin: 5rem auto;
+    
+    &__title {
+        font-size: 5rem;
+        color: #3b42bf;
+        font-weight: 600;
+    }
+
+    &__direction {
+        font-size: 2rem;
+    }
+}
+
+.category-filters {
+    max-width: 126rem;
+    margin: 0 auto;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            &__letters {
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                color: #3B42BF;
+                border: 3px solid #3B42BF;
+                font-weight: 700;
+                line-height: normal;
+                padding: 0.75rem 1.5rem;
+                font-size: 1.75rem; 
+                transition: all ease-in-out 0.1s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            &__price {
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                color: #3B42BF;
+                border: 3px solid #3B42BF;
+                font-weight: 700;
+                line-height: normal;
+                padding: 0.75rem 1.5rem;
+                font-size: 1.75rem; 
+                transition: all ease-in-out 0.1s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            &__brand {
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                color: #3B42BF;
+                border: 3px solid #3B42BF;
+                font-weight: 700;
+                line-height: normal;
+                padding: 0.75rem 1.5rem;
+                font-size: 1.75rem; 
+                transition: all ease-in-out 0.1s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            &__results {
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 0;
+                color: #3b40a0;
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+
+            &__clear {
+                background-color: #3b42bf;
+                border-radius: 1rem;
+                color: #FFFFFF;
+                font-weight: 700;
+                line-height: normal;
+                padding: 0.75rem 1.5rem;
+                font-size: 1.75rem; 
+                border: 3px solid #3b42bf;
+                transition: all ease-in-out 0.1s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            } 
+        }
+    }
+}
+
+.category-cards {
+    max-width: 126rem;
+    margin: 2.5rem auto 10rem auto;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 4rem 2rem;
+        margin: 0 auto;
+
+        &__card {
+            background-color: #F3F6FF;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 1px 1px 1px 0px rgba(222, 222, 222, 0.75);
+            transition: all 0.2s ease-in-out;
+            width: 23.5rem;
+
+           &__image {
+            width: 100%;
+            padding: 2rem 2rem 3rem 2rem;
+           } 
+
+           &__names {
+
+                &__brand {
+                    font-size: 1.25rem;
+                    color: #3B42BF;
+                    margin-bottom: 0;
+                }
+
+                &__item {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden ;
+                }
+
+                &__rating {
+                display: flex;
+
+                    .bi {
+                        color: #3B42BF;
+                    }
+
+                    p {
+                        color: #3B42BF;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                height: fit-content;
+
+                &__button {
+                    background-color: #FFFFFF;
+                    border-radius: 9999px;
+                    color: #3B42BF;
+                    border: 2px solid #3B42BF;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding: 0.5rem 0.75rem;
+                    font-size: 1.75rem;
+                    height: fit-content;
+                    margin: max 0 0 0;
+                    transition: all ease-in-out 0.1s;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #3B42BF;
+                        color: #FFFFFF;
+                        transform: scale(1.1);
+                    }
+                }
+
+                &__price {
+                    font-size: 2.5rem;
+                    color: #3B42BF;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

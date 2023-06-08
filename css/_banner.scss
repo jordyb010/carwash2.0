@@ -1,0 +1,100 @@
+.banner {
+    max-width: 126rem;
+    margin: 5rem auto;
+
+    &__container {
+
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10rem;
+
+            &__text {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 2rem;
+
+                &__title {
+                font-size: 6rem;
+
+                    strong {
+                        color: #3B42BF;
+                    }
+                }
+
+                &__line {
+                    width: 100%;
+                    border-bottom: 2px solid #f4f1ff;
+                }
+
+                &__items {
+                    display: flex;
+                    gap: 3rem;
+
+                    a {
+                        font-size: 2.25rem;
+                        background: linear-gradient(90deg, #3b42bf 0%, #1c228c 100%);
+                        color: white;
+                        font-weight: 500;
+                        border-radius: 200rem;
+                        padding: 0.75rem 1.5rem;
+                        border: none;
+                        transition: all 0.1s ease-in-out;
+                        text-decoration: none;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+
+                        i {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    &__products {
+
+                        &__count {
+                            font-size: 2rem;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                        }
+
+                        &__object {
+                            font-size: 1.25rem;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &__image {
+                
+                img {
+                    width: 45rem;
+                    margin: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .banner {
+
+        &__container {
+
+            &__box {
+                grid-template-columns: 1fr;
+
+                &__text {
+                    margin: 2rem;
+                }
+
+                &__image {
+                    display: none;
+                }
+            }
+        }
+    }
+}

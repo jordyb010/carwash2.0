@@ -1,0 +1,121 @@
+.cards {
+    max-width: 126rem;
+    margin: 10rem auto;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        &__title {
+            font-size: 2.75rem;
+            font-weight: 600;
+    
+            strong {
+                color: #3B42BF
+            }
+        }   
+
+        &__button {
+            font-size: 2rem;
+            background: linear-gradient(90deg, #3b42bf 0%, #1c228c 100%);
+            border-radius: 9999px;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1.25rem;
+            transition: all ease-in-out 0.1s;
+            font-weight: 500;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 2px solid #f4f1ff;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2.25rem;
+
+        &__card {
+            background-color: #F3F6FF;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 1px 1px 1px 0px rgba(222, 222, 222, 0.75);
+            transition: all 0.2s ease-in-out;
+
+           &__image {
+            width: 100%;
+            padding: 2rem 2rem 3rem 2rem;
+           } 
+
+           &__names {
+
+                &__brand {
+                    font-size: 1.25rem;
+                    color: #3B42BF;
+                    margin-bottom: 0;
+                }
+
+                &__item {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+
+                &__rating {
+                display: flex;
+
+                    .bi {
+                        color: #3B42BF;
+                    }
+
+                    p {
+                        color: #3B42BF;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                height: fit-content;
+
+                &__button {
+                    background-color: #FFFFFF;
+                    border-radius: 9999px;
+                    color: #3B42BF;
+                    border: 2px solid #3B42BF;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding: 0.5rem 0.75rem;
+                    font-size: 1.75rem;
+                    height: fit-content;
+                    margin: max 0 0 0;
+                    transition: all ease-in-out 0.1s;
+
+                    &:hover {
+                        background-color: #3B42BF;
+                        color: #FFFFFF;
+                        transform: scale(1.1);
+                    }
+                }
+
+                &__price {
+                    font-size: 2.5rem;
+                    color: #3B42BF;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

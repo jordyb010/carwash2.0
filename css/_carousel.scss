@@ -1,0 +1,87 @@
+.items-carousel {
+    max-width: 126rem;
+    margin: 5rem auto 10rem auto;
+
+    &__title {
+        font-size: 2.75rem;
+        font-weight: 600;
+
+        strong {
+            color: #3B42BF;
+        }
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 2px solid #f4f1ff;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    &__container {
+
+        &__item {
+            background-color: #F3F6FF;
+            border-radius: 2rem;
+            box-shadow: 1px 1px 1px 0px rgba(222, 222, 222, 0.75);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #dce3f6;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+                transform: scale(1.1);
+            }
+
+            &__image {
+
+                img {
+                    padding: 22% 22% 0 22%;
+                }
+            }
+
+            h4 {
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 1.5rem ;
+            }
+        }
+    }
+
+    .bi-arrow-left-circle {
+        font-size: 2rem;
+        padding: 0.5rem;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            border-radius: 1rem;
+            background-color: #3B42BF;
+            color: white;
+        }
+    }
+
+    .bi-arrow-right-circle {
+        font-size: 2rem;
+        padding: 0.5rem;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            border-radius: 1rem;
+            background-color: #3B42BF;
+            color: white;
+        }
+    }
+
+    .bi-arrow-right-circle {
+        font-size: 2rem;
+    }
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}

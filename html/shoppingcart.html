@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" id="style-7">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGear - Best place to Find Computer Gear for Your Need</title>
+    <link rel="stylesheet" href="/css/style.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/ggearicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
+</head>
+<body>  
+<header>
+  <nav class="navigation">
+    <div class="navigation__container">
+        <a class="navigation__container__image" href="index.html">
+            <img class="navigation__container__image__img" src="../img/ggearlogo.png" alt="GGear logo">
+          </a>
+    <ul class="navigation__container__list">
+      <div class="navigation__container__list__left">
+      <li class="navigation__container__list__left__item"><a href="categories.html">Categories</a></li>
+      <li class="navigation__container__list__left__item"><a href="#">Discounts</a></li>
+      <li class="navigation__container__list__left__item"><a href="about.html">About</a></li>
+      <li class="navigation__container__list__left__item"><a href="contactpage.html">Contact</a></li>
+    </div>
+    <div class="navigation__container__list__right">
+      <li class="navigation__container__list__right__item"><a href="#"><i class="bi bi-globe"></i></a></li>
+      <li class="navigation__container__list__right__item"><a href="adminchoose.html"><i class="bi bi-person"></i></a></li>
+      <li class="navigation__container__list__right__item"><a href="shoppingcart.html"><i class="bi bi-cart"></i></a></li>
+    </div>
+    </ul>
+  </div>
+  <div class="navigation__hamburger">
+    <label class="navigation__hamburger__box">
+      <i class="bi bi-list"></i>
+    </label>
+  </div>
+  </nav>
+  <ul class="navigation__hamburger__list">
+    <li class="navigation__hamburger__list__item"><i class="bi bi-house"></i>Home</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-tag"></i>Category</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-people"></i></i>About</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-piggy-bank"></i>Discounts</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-envelope"></i>Contact</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-globe"></i>Language</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-person"></i>Account</li>
+    <li class="navigation__hamburger__list__item"><i class="bi bi-cart"></i>Shopping Cart</li>
+  </ul>
+  </header>
+  <main>
+    <section class="shopgrid">
+        <section class="shopgrid__information">
+            <h2 class="shopgrid__information__title"><i class="bi bi-person"></i>Personal Information</h2>
+            <form action="" class="shopgrid__information__box">
+                <div class="shopgrid__information__box__item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="shopgrid__information__box__item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="shopgrid__information__box__item">
+                    <label for="phone">Phone</label>
+                    <input type="phone" name="phone" id="phone">
+                </div>
+                <div class="shopgrid__information__box__item">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="shopgrid__information__box__item">
+                    <label for="street">Street</label>
+                    <input type="text" name="street" id="street">
+                </div>
+                <div class="shopgrid__information__box__item">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" name="zipcode" id="zipcode">
+                </div>
+            </form>
+        </section>
+        <section class="shopgrid__delivery">
+            <h2 class="shopgrid__delivery__title"><i class="bi bi-truck"></i>Delivery Options</h2>
+            <form class="shopgrid__delivery__box" action="">
+            <div class="shopgrid__delivery__box__item">
+                <label for="street">Date</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="shopgrid__delivery__box__item">
+                <label for="zip">Note</label>
+                <input type="text" name="note" id="note">
+            </div>
+        </form>
+        </section>
+        <section class="shopgrid__payment">
+            <h2 class="shopgrid__payment__title"><i class="bi bi-wallet"></i>Payment Method</h2>
+            <div class="shopgrid__payment__box">
+                <label class="shopgrid__payment__box__item" for="ideal">
+                    <input type="radio" id="ideal" name="payment" value="ideal">
+                    <img src="../img/ideal.png" alt="ideal">
+                </label>
+                <label class="shopgrid__payment__box__item" for="paypal">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <img src="../img/paypal.png" alt="paypal">
+                </label>
+                </label>
+                <label class="shopgrid__payment__box__item" for="mastercard">
+                    <input type="radio" id="mastercard" name="payment" value="mastercard">
+                    <img src="../img/mastercard.png" alt="mastercard">
+                </label>
+                <label class="shopgrid__payment__box__item" for="klarna">
+                    <input type="radio" id="klarna" name="payment" value="klarna">
+                    <img src="../img/klarna.png" alt="klarna">
+                </label>
+                <label class="shopgrid__payment__box__item" for="apple-pay">
+                    <input type="radio" id="apple-pay" name="payment" value="apple-pay">
+                    <img src="../img/applepay.png" alt="apple pay">
+                </label>
+              </div>    
+        </section>
+        <section class="shopgrid__cart">
+            <h2 class="shopgrid__cart__title"><i class="bi bi-cart"></i>Shopping Cart</h2>
+            <div class="shopgrid__cart__container">
+                <div class="shopgrid__cart__container__box">
+                    <div class="shopgrid__cart__container__box__item">
+                        <img src="../img/superlight1.png" alt="product">
+                        <div class="shopgrid__cart__container__box__item__details">
+                            <div class="shopgrid__cart__container__box__item__details__info">
+                                <h3 class="shopgrid__cart__container__box__item__details__info__name">PRO X Superlight</h3>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__brand">Logitech G</h4>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__price">€129,00</h4>
+                            </div>
+                            <div class="shopgrid__cart__container__box__item__details__amount">
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopgrid__cart__container__box__item">
+                        <img src="../img/gpuicon.png" alt="product">
+                        <div class="shopgrid__cart__container__box__item__details">
+                            <div class="shopgrid__cart__container__box__item__details__info">
+                                <h3 class="shopgrid__cart__container__box__item__details__info__name">RTX 3080</h3>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__brand">MSI, Nvidia</h4>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__price">€809,00</h4>
+                            </div>
+                            <div class="shopgrid__cart__container__box__item__details__amount">
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopgrid__cart__container__box__item">
+                        <img src="../img/dropkeyboard.png" alt="product">
+                        <div class="shopgrid__cart__container__box__item__details">
+                            <div class="shopgrid__cart__container__box__item__details__info">
+                                <h3 class="shopgrid__cart__container__box__item__details__info__name">Control Keyboard TKL</h3>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__brand">DROP</h4>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__price">€209,00</h4>
+                            </div>
+                            <div class="shopgrid__cart__container__box__item__details__amount">
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopgrid__cart__container__box__item">
+                        <img src="../img/razerkraken.png" alt="product">
+                        <div class="shopgrid__cart__container__box__item__details">
+                            <div class="shopgrid__cart__container__box__item__details__info">
+                                <h3 class="shopgrid__cart__container__box__item__details__info__name">Kraken V3</h3>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__brand">Razer</h4>
+                                <h4 class="shopgrid__cart__container__box__item__details__info__price">€59,00</h4>
+                            </div>
+                            <div class="shopgrid__cart__container__box__item__details__amount">
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopgrid__cart__container__bottom">
+                    <div class="shopgrid__cart__container__bottom__line"></div>
+                    <div class="shopgrid__cart__container__bottom__subtotal">
+                        <p class="shopgrid__cart__container__bottom__subtotal__title">Subtotal</p>
+                        <p class="shopgrid__cart__container__bottom__subtotal__price">€1206,00</p>
+                    </div>
+                    <div class="shopgrid__cart__container__bottom__shipping">
+                        <p class="shopgrid__cart__container__bottom__shipping__title">Shipping</p>
+                        <p class="shopgrid__cart__container__bottom__shipping__price">€1,95</p>
+                    </div>
+                    <div class="shopgrid__cart__container__bottom__line"></div>
+                    <div class="shopgrid__cart__container__bottom__total">
+                        <p class="shopgrid__cart__container__bottom__total__title">Total (EUR)</p>
+                        <p class="shopgrid__cart__container__bottom__total__price">€1207,95</p>
+                    </div>
+                    <form>
+                    <input class="shopgrid__cart__container__bottom__submit" type="submit" value="Confirm Order">
+                </form>
+                </div>
+            </div>
+        </section>
+    </section>
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"></script>  
+    <script src="../js/app.js"></script>
+</body>
+</html>
